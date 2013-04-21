@@ -19,19 +19,19 @@
   <div id="footer">
     <div class="scene">
       <div class="foreground">
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
       </div>
       <div class="middleground">
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-lg.svg" class="cloud cloud-lg" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-lg.svg" class="cloud cloud-lg" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
       </div>
       <div class="background">
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-lg.svg" class="cloud cloud-lg" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-sm.svg" class="cloud cloud-sm" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
-        <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-lg.svg" class="cloud cloud-lg" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/cloud-sm.svg" class="cloud cloud-sm" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
+        <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
       </div>
     </div>
   </div>
