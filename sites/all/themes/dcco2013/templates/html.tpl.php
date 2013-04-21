@@ -19,6 +19,7 @@
   <div id="footer">
     <div class="scene">
       <div class="foreground">
+        <?php global $base_url; ?>
         <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
         <img src="<?php print $base_url; ?>/<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
       </div>
