@@ -1748,7 +1748,3 @@ function registration_type_delete(RegistrationType $type) {
 function registration_state_access($op, $entity = NULL, $account = NULL, $entity_type = NULL) {
   return user_access('administer registration states', $account);
 }
-
-function registration_form_alter(&$form, $form_id) {
-  dpm($form_id);
-}
