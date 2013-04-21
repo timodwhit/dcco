@@ -17,7 +17,6 @@
   <div id="footer">
     <div class="scene">
       <div class="foreground">
-        <?php dpm(drupal_get_path('theme', 'dcco2013')); ?>
         <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-sm" />
         <img src="<?php print drupal_get_path('theme', 'dcco2013'); ?>/images/mountain.svg" class="mountain mountain-lg" />
       </div>
