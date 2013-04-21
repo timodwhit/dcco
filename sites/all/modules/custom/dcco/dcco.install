@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function dcco_install() {
+  // Enable and set the default theme.
+  theme_enable(array('dcco2013'));
+  variable_set('theme_default', 'dcco2013');
+}

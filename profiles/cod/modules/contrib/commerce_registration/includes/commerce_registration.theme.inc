@@ -59,16 +59,15 @@ function theme_commerce_registration_order($variables) {
   $rows = array();
 
   foreach ($variables['registrations'] as $registration) {
-    $host_entity_type_info = entity_get_info($registration->entity_type);
-    $host_entity = entity_load_single($registration->entity_type, $registration->entity_id);
-    list(, , $host_entity_bundle) = entity_extract_ids($registration->entity_type, $host_entity);
+    $wrapper = entity_metadata_wrapper('registration', $registration);
+    $host_entity = $wrapper->entity->value();
 
     $host_label = entity_label($registration->entity_type, $host_entity);
     $host_uri = entity_uri($registration->entity_type, $host_entity);
 
     $user_col = '';
     if ($registration->user_uid) {
-      $user = user_load($registration->user_uid);
+      $user = $wrapper->user->value();
       $uri = entity_uri('user', $user);
       $user_col = l($user->name, $uri['path']);
     }
@@ -80,12 +79,12 @@ function theme_commerce_registration_order($variables) {
 
     $rows[] = array(
       l($registration->registration_id, 'registration/' . $registration->registration_id),
-      l($registration->mail, 'mailto:' . $registration->mail),
+      l($wrapper->mail->value(), 'mailto:' . $wrapper->mail->value()),
       $user_col,
       $link,
       $registration->count,
       format_date($registration->created),
-      entity_label('registration_state', $registration->state)
+      entity_label('registration_state', $wrapper->state->value())
     );
   }
   $table = array(
