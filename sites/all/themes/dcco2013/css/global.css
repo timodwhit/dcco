@@ -929,7 +929,10 @@ body .scene {
 .region-branding {
   padding-top:20px;
 }
-
+.logo-img {
+  float: none;
+  text-align: center;
+}
 h1.site-name,
 h2.site-name {
   text-indent: -9999px;
