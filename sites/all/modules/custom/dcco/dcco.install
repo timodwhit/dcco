@@ -8,6 +8,9 @@ function dcco_install() {
   theme_enable(array('dcco2013'));
   variable_set('theme_default', 'dcco2013');
 
+  variable_set('site_name', 'DrupalCamp Colorado 2013');
+  variable_set('site_slogan', 'June 29-30, <span class="year">2013</span>');
+
   _dcco_create_sponsor_levels();
 }
 
