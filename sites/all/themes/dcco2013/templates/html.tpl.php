@@ -8,12 +8,14 @@
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body<?php print $attributes;?>>
+  <div class="site-wrapper">
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+  </div> 
   <div id="footer">
     <div class="scene">
       <div class="foreground">
@@ -33,5 +35,6 @@
       </div>
     </div>
   </div>
+   
 </body>
 </html>

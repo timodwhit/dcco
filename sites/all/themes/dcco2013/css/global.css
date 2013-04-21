@@ -1,6 +1,9 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
+.site-wrapper {
+  z-index: 2;
+}
 
 article,
 aside,
@@ -42,6 +45,7 @@ textarea {
 body {
   margin: 0;
   position: relative;
+  height: 100% !important;
 }
 
 a:focus {
@@ -279,6 +283,9 @@ h1 {
   padding-bottom: 0em;
   margin-bottom: 0em;
   font-weight: 300;
+}
+h1.site-name {
+  text-indent: -9999px;
 }
 
 h2 {
@@ -591,10 +598,7 @@ tbody > tr.odd {
   }
 }
 
-.page {
-  z-index: 2;
-  position: relative;
-}
+
 
 #header {
   padding: 0% 0 0;
@@ -785,12 +789,11 @@ tbody > tr.odd {
 }
 
 .page-wrapper {
-  position: relative;
 }
 
 body #footer {
   height: 80%;
-  z-index: 1;
+  z-index: -1;
 }
 body .scene {
   height: 100%;
@@ -918,4 +921,12 @@ body .scene {
   width: 5%;
   top: 35%;
   left: 50%;
+}
+
+.container-12 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
