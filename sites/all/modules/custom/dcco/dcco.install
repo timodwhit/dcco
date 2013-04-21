@@ -11,6 +11,9 @@ function dcco_install() {
   variable_set('site_name', 'DrupalCamp Colorado 2013');
   variable_set('site_slogan', 'June 29-30, <span class="year">2013</span>');
 
+  // Allow visitors to register accounts without admin approval.
+  variable_set('user_register', 1);
+
   _dcco_create_sponsor_levels();
 }
 
