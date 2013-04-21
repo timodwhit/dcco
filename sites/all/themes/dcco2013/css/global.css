@@ -284,9 +284,7 @@ h1 {
   margin-bottom: 0em;
   font-weight: 300;
 }
-h1.site-name {
-  text-indent: -9999px;
-}
+
 
 h2 {
   font-size: 1.875em;
@@ -926,8 +924,15 @@ body .scene {
 
 /* NEW STYLES START HERE */
 
+
+
 .region-branding {
   padding-top:20px;
+}
+
+h1.site-name,
+h2.site-name {
+  text-indent: -9999px;
 }
 
 .container-12 {
