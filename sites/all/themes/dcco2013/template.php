@@ -10,3 +10,10 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+ 
+ 
+ 
+ 
+function dcco2013_page_alter() {
+  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+ }
