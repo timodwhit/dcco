@@ -28,3 +28,4 @@ function _dcco_create_sponsor_levels() {
     $term->vid = $sponsor_vocabulary->vid;
     taxonomy_term_save($term);
   }
+}
