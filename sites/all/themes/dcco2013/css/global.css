@@ -284,9 +284,7 @@ h1 {
   margin-bottom: 0em;
   font-weight: 300;
 }
-h1.site-name {
-  text-indent: -9999px;
-}
+
 
 h2 {
   font-size: 1.875em;
@@ -926,8 +924,18 @@ body .scene {
 
 /* NEW STYLES START HERE */
 
+
+
 .region-branding {
   padding-top:20px;
+}
+.logo-img {
+  float: none;
+  text-align: center;
+}
+h1.site-name,
+h2.site-name {
+  text-indent: -9999px;
 }
 
 .container-12 {
@@ -937,6 +945,10 @@ body .scene {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.region-inner {
+.region-inner,
+.breadcrumb {
   padding:0 10px;
+}
+.content {
+  line-height: 1.5em;
 }
