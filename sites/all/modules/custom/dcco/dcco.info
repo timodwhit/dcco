@@ -1,0 +1,3 @@
+name = DrupalCamp Colorado
+description = Custom module for DrupalCamp Colorado
+core = 7.x
