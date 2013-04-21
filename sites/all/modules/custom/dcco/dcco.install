@@ -7,4 +7,25 @@ function dcco_install() {
   // Enable and set the default theme.
   theme_enable(array('dcco2013'));
   variable_set('theme_default', 'dcco2013');
+
+  _dcco_create_sponsor_levels();
+}
+
+/**
+ * Create sponsorship level terms.
+ */
+function _dcco_create_sponsor_levels() {
+  $sponsor_vocabulary = taxonomy_vocabulary_machine_name_load('sponsorship_level');
+  $terms = array(
+    'Molybdenum',
+    'Platinum',
+    'Bonze',
+  );
+  foreach ($terms as $weight => $term_name) {
+    $term = new StdClass();
+    $term->name = $term_name;
+    $term->weight = $weight;
+    $term->vid = $sponsor_vocabulary->vid;
+    taxonomy_term_save($term);
+  }
 }
