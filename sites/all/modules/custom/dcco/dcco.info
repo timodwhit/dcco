@@ -1,3 +1,7 @@
 name = DrupalCamp Colorado
 description = Custom module for DrupalCamp Colorado
 core = 7.x
+
+dependencies[] = cod_news
+dependencies][ = cod_front_page
+dependencies[] = cod_paid_events
