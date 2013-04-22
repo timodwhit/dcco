@@ -11,7 +11,16 @@ function dcco_install() {
   variable_set('site_name', 'DrupalCamp Colorado 2013');
   variable_set('site_slogan', 'June 29-30, <span class="year">2013</span>');
 
+  // Allow visitors to register accounts without admin approval.
+  variable_set('user_register', 1);
+
+  // We dont need no wysiwyg!
+  module_disable(array('commons_wysiwyg', 'ckeditor'));
+
   _dcco_create_sponsor_levels();
+
+  _dcco_add_menu();
+
 }
 
 /**
@@ -30,5 +39,26 @@ function _dcco_create_sponsor_levels() {
     $term->weight = $weight;
     $term->vid = $sponsor_vocabulary->vid;
     taxonomy_term_save($term);
+  }
+}
+
+function _dcco_add_menu() {
+    $items = array(
+    array(
+      'link_path' => 'node/add/session',
+      'link_title' => 'Submit Session',
+      'menu_name' => 'user-menu',
+      'weight' => 0,
+    ),
+    array(
+      'link_path' => 'node',
+      'link_title' => 'Register',
+      'menu_name' => 'user-menu',
+      'weight' => 0,
+    ),
+    );
+
+  foreach ($items as $item) {
+    menu_link_save($item);
   }
 }

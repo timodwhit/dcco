@@ -22,6 +22,7 @@ features[variable][] = comment_news
 features[variable][] = comment_preview_news
 features[variable][] = comment_subject_field_news
 features[variable][] = node_options_news
+features[variable][] = pathauto_node_news_pattern
 features[views_view][] = news
 
 ; Information added by drupal.org packaging script on 2013-01-26

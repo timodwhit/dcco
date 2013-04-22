@@ -508,5 +508,19 @@ function cod_session_strongarm() {
   $strongarm->value = 1;
   $export['node_submitted_time_slot'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_page_pattern';
+  $strongarm->value = '[node:menu-link:parents:join-path]/[node:title]';
+  $export['pathauto_node_page_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_session_pattern';
+  $strongarm->value = 'sessions/[node:title]';
+  $export['pathauto_node_session_pattern'] = $strongarm;
+
   return $export;
 }
