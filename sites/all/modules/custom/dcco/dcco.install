@@ -15,6 +15,9 @@ function dcco_install() {
   variable_set('user_register', 1);
 
   _dcco_create_sponsor_levels();
+
+  _dcco_add_menu();
+
 }
 
 /**
@@ -33,5 +36,26 @@ function _dcco_create_sponsor_levels() {
     $term->weight = $weight;
     $term->vid = $sponsor_vocabulary->vid;
     taxonomy_term_save($term);
+  }
+}
+
+function _dcco_add_menu() {
+    $items = array(
+    array(
+      'link_path' => 'node/add/session',
+      'link_title' => 'Submit Session',
+      'menu_name' => 'user-menu',
+      'weight' => 0,
+    ),
+    array(
+      'link_path' => 'node',
+      'link_title' => 'Register',
+      'menu_name' => 'user-menu',
+      'weight' => 0,
+    ),
+    );
+
+  foreach ($items as $item) {
+    menu_link_save($item);
   }
 }
