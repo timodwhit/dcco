@@ -14,6 +14,9 @@ function dcco_install() {
   // Allow visitors to register accounts without admin approval.
   variable_set('user_register', 1);
 
+  // We dont need no wysiwyg!
+  module_disable(array('commons_wysiwyg', 'ckeditor'));
+
   _dcco_create_sponsor_levels();
 
   _dcco_add_menu();
