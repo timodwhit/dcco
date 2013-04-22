@@ -9,7 +9,7 @@ function cod_install_tasks() {
 
   // To Do - demo content
   //$demo_content = variable_get('cod_install_example_content', FALSE);
-  
+
   // To Do - Acquia Connector
   //$acquia_connector = variable_get('cod_install_acquia_connector', FALSE);
 
@@ -72,7 +72,7 @@ function cod_create_first_group() {
     '#title' => st("Event name"),
     '#description' => st('This is the name of your conference or event. You may want to include the year or date if this is a repeating event.'),
     '#required' => TRUE,
-    '#default_value' => st('DrupalCamp Antarctica'),
+    '#default_value' => st('DrupalCamp Colorado 2013'),
   );
 
   $form['cod_first_group_body'] = array(
@@ -80,7 +80,7 @@ function cod_create_first_group() {
     '#title' => st('Event description'),
     '#description' => st("This text will appear on the event's homepage and gives a general overview of your event. You can always change this text later."),
     '#required' => TRUE,
-    '#default_value' => st('DrupalCamp Antarctica is held once a year at the South Pole, with a regular attendance of around 200 penguins'),
+    '#default_value' => st('DrupalCamp Colorado is an annual gathering of people learning and discussing the open-source content management system, Drupal. Sessions will cover topics ranging from the basic to the more complex, with plenty in between. Join us in Boulder, CO to share, learn, collaborate, and get involved in the community!'),
   );
 
   $form['cod_first_group_submit'] = array(
