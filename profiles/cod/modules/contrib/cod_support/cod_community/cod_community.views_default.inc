@@ -305,6 +305,11 @@ function cod_community_views_default_views() {
   $handler->display->display_options['filters']['field_profile_interests_value']['expose']['label'] = 'Interests';
   $handler->display->display_options['filters']['field_profile_interests_value']['expose']['operator'] = 'field_profile_interests_value_op';
   $handler->display->display_options['filters']['field_profile_interests_value']['expose']['identifier'] = 'field_profile_interests_value';
+  /* Filter criterion: User: First name (field_profile_first) */
+  $handler->display->display_options['filters']['field_profile_first_value_1']['id'] = 'field_profile_first_value_1';
+  $handler->display->display_options['filters']['field_profile_first_value_1']['table'] = 'field_data_field_profile_first';
+  $handler->display->display_options['filters']['field_profile_first_value_1']['field'] = 'field_profile_first_value';
+  $handler->display->display_options['filters']['field_profile_first_value_1']['operator'] = 'not empty';
   $handler->display->display_options['path'] = 'community';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Community';
