@@ -47,11 +47,11 @@ function cod_sponsors_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => 4,
         ),
         'listing' => array(
           'label' => 'above',
@@ -127,14 +127,14 @@ function cod_sponsors_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => '0',
+          'weight' => 0,
         ),
         'listing' => array(
           'label' => 'above',
@@ -238,7 +238,7 @@ function cod_sponsors_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '3',
+          'weight' => 1,
         ),
         'listing' => array(
           'label' => 'above',
@@ -322,7 +322,7 @@ function cod_sponsors_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'weight' => 5,
         ),
         'listing' => array(
           'label' => 'above',
@@ -394,11 +394,11 @@ function cod_sponsors_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '1',
+          'weight' => 2,
         ),
         'listing' => array(
           'label' => 'above',

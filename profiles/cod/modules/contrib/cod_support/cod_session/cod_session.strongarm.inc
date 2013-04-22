@@ -336,14 +336,18 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_room';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_room'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_schedule_item';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_schedule_item'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -359,7 +363,9 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_time_slot';
-  $strongarm->value = array();
+  $strongarm->value = array(
+    0 => 'main-menu',
+  );
   $export['menu_options_time_slot'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -405,6 +411,7 @@ function cod_session_strongarm() {
   $strongarm->name = 'node_options_room';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_room'] = $strongarm;
 
@@ -414,6 +421,7 @@ function cod_session_strongarm() {
   $strongarm->name = 'node_options_schedule_item';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_schedule_item'] = $strongarm;
 
@@ -433,6 +441,7 @@ function cod_session_strongarm() {
   $strongarm->name = 'node_options_time_slot';
   $strongarm->value = array(
     0 => 'status',
+    1 => 'promote',
   );
   $export['node_options_time_slot'] = $strongarm;
 
@@ -475,14 +484,14 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_room';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_room'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_schedule_item';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_schedule_item'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -496,7 +505,7 @@ function cod_session_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_time_slot';
-  $strongarm->value = 0;
+  $strongarm->value = 1;
   $export['node_submitted_time_slot'] = $strongarm;
 
   return $export;

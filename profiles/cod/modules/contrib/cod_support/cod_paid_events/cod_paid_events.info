@@ -23,10 +23,9 @@ features[field][] = node-event-field_event_product
 features[field][] = node-event-field_paid_event
 features[registration_type][] = paid_event
 
-
-; Information added by drush on 2013-01-26
-version = "7.x-1.0-alpha2+0-dev"
+; Information added by drupal.org packaging script on 2013-01-26
+version = "7.x-1.0-alpha2"
 core = "7.x"
 project = "cod_support"
-datestamp = "1359186375"
+datestamp = "1359186063"
 

@@ -122,7 +122,6 @@ function cod_sponsors_views_default_views() {
   $handler->display->display_options['fields']['field_sponsor_sponsorship_level']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_sponsor_sponsorship_level']['element_class'] = 'title';
   $handler->display->display_options['fields']['field_sponsor_sponsorship_level']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_sponsor_sponsorship_level']['type'] = 'taxonomy_term_reference_plain';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Taxonomy term: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
