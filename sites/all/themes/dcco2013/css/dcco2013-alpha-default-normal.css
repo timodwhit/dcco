@@ -5,6 +5,14 @@
 #main-menu {
   display: block;
 }
+#main-menu li {
+  display: inline;
+  padding:0 8px;
+}
+#main-menu a {
+  margin:0px;
+  font-size:100%;
+}
 a#mobile-menu-toggle {
   display: none;
 }
