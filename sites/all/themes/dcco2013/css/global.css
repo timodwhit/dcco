@@ -939,7 +939,9 @@ h1.site-name,
 h2.site-name {
   text-indent: -9999px;
 }
-
+.site-name-slogan {
+  display: none;
+}
 .container-12 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -953,4 +955,33 @@ h2.site-name {
 }
 .content {
   line-height: 1.5em;
+}
+#main-menu a {
+  color:#df3026;
+}
+
+/* MOBILE NAVIGATION TOGGLE */
+
+  /* HIDE MENU FOR MOBILE - DISPLAY ON DESKTOP */
+#main-menu {
+  display: none;
+}
+
+
+.region-branding-inner {
+  position: relative;
+  padding:0 20px;
+}
+.block-mobile-menu-toggle {
+  position: absolute;
+  top:0px;
+  right:0px;
+}
+a#mobile-menu-toggle {
+  display: block;
+  background-image: url(../images/toggle.png);
+  background-repeat: no-repeat;
+  height: 24px;
+  text-indent: -9999px;
+  width: 27px;
 }
