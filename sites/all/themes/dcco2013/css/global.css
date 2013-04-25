@@ -807,6 +807,7 @@ body .scene {
   }
   body #footer {
     height: 60%;
+    position: absolute;
   }
   body .scene {
     height: 100%;
@@ -824,6 +825,7 @@ body .scene {
   }
   body #footer {
     height: 600px;
+    position: fixed;
   }
   body .scene {
     left: -30%;
@@ -835,7 +837,7 @@ body .scene {
 #footer {
   width: 100%;
   overflow: hidden;
-  position: absolute;
+  
   bottom: 0;
   left: 0;
 }
