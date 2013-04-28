@@ -999,6 +999,36 @@ h2.site-name {
   background-repeat: no-repeat;
 }
 
+#main-menu a:hover,
+#main-menu a.active,
+#main-menu a.active-trail,
+#mobile-menu a:hover,
+#mobile-menu a.active,
+#mobile-menu a.active-trail {
+  text-decoration: none;
+  background-color: #2cadad;
+  background:
+    -moz-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(315deg, transparent 5px, #f66038 5px);
+  background:
+    -o-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -o-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background:
+    -webkit-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 55% 55%;
+  -webkit-background-size: 55% 55%;
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+}
+
 a#home-link span {
   display: inline-block;
   background-image: url(../images/home.png);
