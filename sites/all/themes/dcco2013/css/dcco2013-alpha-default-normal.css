@@ -2,7 +2,7 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
 
-#main-menu {
+.navigation #main-menu {
   display: block;
 }
 #main-menu li {
@@ -13,6 +13,12 @@
   margin:0px;
   font-size:100%;
 }
+#mobile-menu {
+  display: none;
+}
 a#mobile-menu-toggle {
   display: none;
+}
+nav.secondary-navigation {
+  display: block;
 }

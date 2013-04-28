@@ -956,14 +956,18 @@ h2.site-name {
 .content {
   line-height: 1.5em;
 }
-#main-menu {
+#main-menu,
+#mobile-menu ul.menu {
   text-align: center;
 } 
-#main-menu li {
+#main-menu li,
+#mobile-menu ul.menu li {
   display: inline;
   padding:0px 0px;
 }
-#main-menu a {
+
+#main-menu a,
+#mobile-menu ul.menu a {
   display: inline-block;
   background:#f66038;
   color:#fff;
@@ -996,10 +1000,15 @@ h2.site-name {
 /* MOBILE NAVIGATION TOGGLE */
 
   /* HIDE MENU FOR MOBILE - DISPLAY ON DESKTOP */
-#main-menu {
+.navigation #main-menu {
   display: none;
 }
-
+#mobile-menu {
+  display: none;
+}
+#mobile-menu h2 {
+  display: none;
+}
 
 .region-branding-inner {
   position: relative;
@@ -1017,4 +1026,46 @@ a#mobile-menu-toggle {
   height: 24px;
   text-indent: -9999px;
   width: 27px;
+}
+
+/* SECOND NAV */
+
+nav.secondary-navigation {
+  display: none;
+  float: right;
+  padding: 0 5px;
+  background:#2cadad;
+  color:#fff;
+  font-size: 85%;
+  background:
+    -moz-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background:
+    -o-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -o-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background:
+    -webkit-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(225deg, #2cadad 5px, #2cadad 5px),
+    -webkit-linear-gradient(315deg, #2cadad 5px, #2cadad 5px);
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 55% 55%;
+  -webkit-background-size: 55% 55%;
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+}
+nav.secondary-navigation ul,
+nav.secondary-navigation ul li {
+  margin: 0;
+  padding: 0;
+}
+nav.secondary-navigation a {
+  display: inline-block;
+  padding:5px 10px;
+  color:#fff;
+  margin: 0;
 }
