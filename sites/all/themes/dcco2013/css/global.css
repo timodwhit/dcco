@@ -289,10 +289,8 @@ h1 {
 h2 {
   font-size: 1.875em;
   line-height: 1em;
-  margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0em;
   font-weight: 300;
   color: #33adad;
 }
@@ -926,7 +924,10 @@ body .scene {
 
 /* NEW STYLES START HERE */
 
-
+a:link, 
+a:visited {
+  color:#f66038;
+}
 
 .region-branding {
   padding-top:20px;
@@ -952,6 +953,7 @@ h2.site-name {
 .region-inner,
 .breadcrumb {
   padding:0 10px;
+  font-size: 85%;
 }
 .content {
   line-height: 1.5em;
@@ -1068,4 +1070,29 @@ nav.secondary-navigation a {
   padding:5px 10px;
   color:#fff;
   margin: 0;
+}
+
+h1#page-title {
+  margin-bottom: 10px;
+}
+
+/* BLOCKS */
+.block {
+  margin-bottom:20px;
+}
+h2.block-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin:5px 0;
+}
+
+/* SIDEBARS */
+#region-sidebar-first,
+#region-sidebar-second {
+  background:#e9edf0;
+  padding:20px 0;
+}
+#region-sidebar-first h2,
+#region-sidebar-second h2 {
+  color:#333;
 }
