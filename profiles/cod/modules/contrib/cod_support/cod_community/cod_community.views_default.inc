@@ -258,54 +258,6 @@ function cod_community_views_default_views() {
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: User: First name (field_profile_first) */
-  $handler->display->display_options['filters']['field_profile_first_value']['id'] = 'field_profile_first_value';
-  $handler->display->display_options['filters']['field_profile_first_value']['table'] = 'field_data_field_profile_first';
-  $handler->display->display_options['filters']['field_profile_first_value']['field'] = 'field_profile_first_value';
-  $handler->display->display_options['filters']['field_profile_first_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_profile_first_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_first_value']['expose']['operator_id'] = 'field_profile_first_value_op';
-  $handler->display->display_options['filters']['field_profile_first_value']['expose']['label'] = 'First name';
-  $handler->display->display_options['filters']['field_profile_first_value']['expose']['operator'] = 'field_profile_first_value_op';
-  $handler->display->display_options['filters']['field_profile_first_value']['expose']['identifier'] = 'field_profile_first_value';
-  /* Filter criterion: User: Last name (field_profile_last) */
-  $handler->display->display_options['filters']['field_profile_last_value']['id'] = 'field_profile_last_value';
-  $handler->display->display_options['filters']['field_profile_last_value']['table'] = 'field_data_field_profile_last';
-  $handler->display->display_options['filters']['field_profile_last_value']['field'] = 'field_profile_last_value';
-  $handler->display->display_options['filters']['field_profile_last_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_profile_last_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_last_value']['expose']['operator_id'] = 'field_profile_last_value_op';
-  $handler->display->display_options['filters']['field_profile_last_value']['expose']['label'] = 'Last name';
-  $handler->display->display_options['filters']['field_profile_last_value']['expose']['operator'] = 'field_profile_last_value_op';
-  $handler->display->display_options['filters']['field_profile_last_value']['expose']['identifier'] = 'field_profile_last_value';
-  /* Filter criterion: User: Organization (field_profile_org) */
-  $handler->display->display_options['filters']['field_profile_org_value']['id'] = 'field_profile_org_value';
-  $handler->display->display_options['filters']['field_profile_org_value']['table'] = 'field_data_field_profile_org';
-  $handler->display->display_options['filters']['field_profile_org_value']['field'] = 'field_profile_org_value';
-  $handler->display->display_options['filters']['field_profile_org_value']['group'] = 1;
-  $handler->display->display_options['filters']['field_profile_org_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_org_value']['expose']['operator_id'] = 'field_profile_org_value_op';
-  $handler->display->display_options['filters']['field_profile_org_value']['expose']['label'] = 'Organization';
-  $handler->display->display_options['filters']['field_profile_org_value']['expose']['operator'] = 'field_profile_org_value_op';
-  $handler->display->display_options['filters']['field_profile_org_value']['expose']['identifier'] = 'field_profile_org_value';
-  /* Filter criterion: User: Job title (field_profile_job_title) */
-  $handler->display->display_options['filters']['field_profile_job_title_value']['id'] = 'field_profile_job_title_value';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['table'] = 'field_data_field_profile_job_title';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['field'] = 'field_profile_job_title_value';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator_id'] = 'field_profile_job_title_value_op';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['label'] = 'Job title';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['operator'] = 'field_profile_job_title_value_op';
-  $handler->display->display_options['filters']['field_profile_job_title_value']['expose']['identifier'] = 'field_profile_job_title_value';
-  /* Filter criterion: User: Interests (field_profile_interests) */
-  $handler->display->display_options['filters']['field_profile_interests_value']['id'] = 'field_profile_interests_value';
-  $handler->display->display_options['filters']['field_profile_interests_value']['table'] = 'field_data_field_profile_interests';
-  $handler->display->display_options['filters']['field_profile_interests_value']['field'] = 'field_profile_interests_value';
-  $handler->display->display_options['filters']['field_profile_interests_value']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['operator_id'] = 'field_profile_interests_value_op';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['label'] = 'Interests';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['operator'] = 'field_profile_interests_value_op';
-  $handler->display->display_options['filters']['field_profile_interests_value']['expose']['identifier'] = 'field_profile_interests_value';
-  /* Filter criterion: User: First name (field_profile_first) */
   $handler->display->display_options['filters']['field_profile_first_value_1']['id'] = 'field_profile_first_value_1';
   $handler->display->display_options['filters']['field_profile_first_value_1']['table'] = 'field_data_field_profile_first';
   $handler->display->display_options['filters']['field_profile_first_value_1']['field'] = 'field_profile_first_value';
