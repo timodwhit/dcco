@@ -1,5 +1,5 @@
 name = DCCO Feature
-description = So far this only has OG permissions.
+description = OG Permissions and Filtered Text Format.
 core = 7.x
 package = Features
 php = 5.2.4
@@ -7,6 +7,7 @@ dependencies[] = features
 dependencies[] = og
 dependencies[] = og_field_access
 features[features_api][] = api:1
+features[filter][] = filtered_html
 features[og_features_permission][] = node:event:update body field
 features[og_features_permission][] = node:event:update field_experience field
 features[og_features_permission][] = node:event:update field_slides field
