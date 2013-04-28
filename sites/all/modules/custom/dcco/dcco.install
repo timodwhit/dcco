@@ -77,6 +77,15 @@ function _dcco_create_menu_items() {
  * Create a few placeholder nodes.
  */
 function _dcco_create_nodes() {
+  // Find our event node so that we can set the og.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'event');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $event_node = node_load(array_pop(array_keys($result['node'])));
+  }
+
   $nodes = array(
     array(
       'title' => 'DrupalCamp Colorado 2013',
@@ -85,7 +94,6 @@ function _dcco_create_nodes() {
       'path' => 'home',
     ),
     // Rooms
-    // @todo set og group
     array(
       'title' => 'Wittemyer Courtroom',
       'type' => 'room',
@@ -138,6 +146,10 @@ function _dcco_create_nodes() {
         'pathauto' => FALSE, 
         'alias' => $n['path'],
       );
+    }
+    // Add certain node types to the event og.
+    if (in_array($node->type, array('room'))) {
+      $node->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $event_node->nid;
     }
     node_save($node);
   }
