@@ -1697,9 +1697,10 @@ function cod_session_field_default_fields() {
       'module' => 'list',
       'settings' => array(
         'allowed_values' => array(
-          'Track 1' => 'Track 1',
-          'Track 2' => 'Track 2',
-          'Track 3' => 'Track 3',
+          'development' => 'Development and Site Building',
+          'design' => 'Design and Front End',
+          'business' => 'Business and Open Source',
+          'commerce' => 'Commerce',
         ),
         'allowed_values_function' => '',
         'field_permissions' => array(
