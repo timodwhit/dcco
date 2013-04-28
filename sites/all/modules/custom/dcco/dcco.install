@@ -94,6 +94,17 @@ function _dcco_create_nodes() {
       'type' => 'page',
       'path' => 'home',
     ),
+    array(
+      'title' => 'Travel',
+      'body' => '',
+      'type' => 'page',
+      'menu' => array(
+        'menu_name' => 'main-menu',
+        'plid' => 0,
+        'link_title' => 'Travel',
+        'enabled' => TRUE,
+      ),
+    ),
     // Rooms
     array(
       'title' => 'Wittemyer Courtroom',
