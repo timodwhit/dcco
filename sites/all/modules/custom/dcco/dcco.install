@@ -7,6 +7,7 @@ function dcco_install() {
   // Enable and set the default theme.
   theme_enable(array('dcco2013'));
   variable_set('theme_default', 'dcco2013');
+  variable_set('node_admin_theme', 0);
 
   variable_set('site_name', 'DrupalCamp Colorado 2013');
   variable_set('site_slogan', 'June 29-30, <span class="year">2013</span>');
@@ -77,6 +78,15 @@ function _dcco_create_menu_items() {
  * Create a few placeholder nodes.
  */
 function _dcco_create_nodes() {
+  // Find our event node so that we can set the og.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'event');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $event_node = node_load(array_pop(array_keys($result['node'])));
+  }
+
   $nodes = array(
     array(
       'title' => 'DrupalCamp Colorado 2013',
@@ -84,8 +94,18 @@ function _dcco_create_nodes() {
       'type' => 'page',
       'path' => 'home',
     ),
+    array(
+      'title' => 'Travel',
+      'body' => '',
+      'type' => 'page',
+      'menu' => array(
+        'menu_name' => 'main-menu',
+        'plid' => 0,
+        'link_title' => 'Travel',
+        'enabled' => TRUE,
+      ),
+    ),
     // Rooms
-    // @todo set og group
     array(
       'title' => 'Wittemyer Courtroom',
       'type' => 'room',
@@ -138,6 +158,10 @@ function _dcco_create_nodes() {
         'pathauto' => FALSE, 
         'alias' => $n['path'],
       );
+    }
+    // Add certain node types to the event og.
+    if (in_array($node->type, array('room'))) {
+      $node->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $event_node->nid;
     }
     node_save($node);
   }
