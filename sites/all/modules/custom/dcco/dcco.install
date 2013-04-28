@@ -19,7 +19,7 @@ function dcco_install() {
 
   _dcco_create_sponsor_levels();
 
-  _dcco_add_menu();
+  _dcco_create_menu_items();
 
 }
 
@@ -42,8 +42,17 @@ function _dcco_create_sponsor_levels() {
   }
 }
 
-function _dcco_add_menu() {
-    $items = array(
+/**
+ * Create menu items in main and secondary menus.
+ */
+function _dcco_create_menu_items() {
+  $items = array(
+    array(
+      'link_path' => '<front>',
+      'link_title' => 'Home',
+      'menu_name' => 'main-menu',
+      'weight' => '-50',
+    ),
     array(
       'link_path' => 'node/add/session',
       'link_title' => 'Submit Session',
@@ -56,7 +65,7 @@ function _dcco_add_menu() {
       'menu_name' => 'user-menu',
       'weight' => 0,
     ),
-    );
+  );
 
   foreach ($items as $item) {
     menu_link_save($item);
