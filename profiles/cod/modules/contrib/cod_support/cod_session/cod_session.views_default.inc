@@ -1037,7 +1037,6 @@ function cod_session_views_default_views() {
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['title']['expose']['label'] = 'Title';
   $handler->display->display_options['path'] = 'program/sessions/accepted';
   $handler->display->display_options['menu']['type'] = 'default tab';
