@@ -6,4 +6,5 @@ dependencies[] = cod_news
 dependencies[] = cod_front_page
 dependencies[] = cod_paid_events
 dependencies[] = dcco_feature
+dependencies[] = dcco_sitewide_context
 dependencies[] = omega_tools
