@@ -289,10 +289,8 @@ h1 {
 h2 {
   font-size: 1.875em;
   line-height: 1em;
-  margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0em;
   font-weight: 300;
   color: #33adad;
 }
@@ -926,7 +924,10 @@ body .scene {
 
 /* NEW STYLES START HERE */
 
-
+a:link, 
+a:visited {
+  color:#f66038;
+}
 
 .region-branding {
   padding-top:20px;
@@ -949,28 +950,33 @@ h2.site-name {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.9);
 }
-.region-inner,
+.block-inner,
 .breadcrumb {
   padding:0 10px;
+  font-size: 85%;
 }
 .content {
   line-height: 1.5em;
 }
-#main-menu {
+#main-menu,
+#mobile-menu ul.menu {
   text-align: center;
 } 
-#main-menu li {
+#main-menu li,
+#mobile-menu ul.menu li {
   display: inline;
   padding:0px 0px;
 }
-#main-menu a {
+
+#main-menu a,
+#mobile-menu ul.menu a {
   display: inline-block;
   background:#f66038;
   color:#fff;
   font-weight: bold;
   padding:10px;
   margin:10px;
-  font-size:150%;
+  font-size:16px;
   background:
     -moz-linear-gradient(45deg,  transparent 5px, #f66038 5px),
     -moz-linear-gradient(135deg, transparent 5px, #f66038 5px),
@@ -993,13 +999,27 @@ h2.site-name {
   background-repeat: no-repeat;
 }
 
+a#home-link span {
+  display: inline-block;
+  background-image: url(../images/home.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width:16px;
+  background-position: center center;
+}
+
 /* MOBILE NAVIGATION TOGGLE */
 
   /* HIDE MENU FOR MOBILE - DISPLAY ON DESKTOP */
-#main-menu {
+.navigation #main-menu {
   display: none;
 }
-
+#mobile-menu {
+  display: none;
+}
+#mobile-menu h2 {
+  display: none;
+}
 
 .region-branding-inner {
   position: relative;
@@ -1017,4 +1037,71 @@ a#mobile-menu-toggle {
   height: 24px;
   text-indent: -9999px;
   width: 27px;
+}
+
+/* SECOND NAV */
+
+nav.secondary-navigation {
+  display: none;
+  float: right;
+  padding: 0 5px;
+  background:#2cadad;
+  color:#fff;
+  font-size: 85%;
+  background:
+    -moz-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -moz-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background:
+    -o-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -o-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(225deg, transparent 5px, #2cadad 5px),
+    -o-linear-gradient(315deg, transparent 5px, #2cadad 5px);
+  background:
+    -webkit-linear-gradient(45deg,  transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(135deg, transparent 5px, #2cadad 5px),
+    -webkit-linear-gradient(225deg, #2cadad 5px, #2cadad 5px),
+    -webkit-linear-gradient(315deg, #2cadad 5px, #2cadad 5px);
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 55% 55%;
+  -webkit-background-size: 55% 55%;
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+}
+nav.secondary-navigation ul,
+nav.secondary-navigation ul li {
+  margin: 0;
+  padding: 0;
+}
+nav.secondary-navigation a {
+  display: inline-block;
+  padding:5px 10px;
+  color:#fff;
+  margin: 0;
+}
+
+h1#page-title {
+  margin-bottom: 10px;
+}
+
+/* BLOCKS */
+.block {
+  margin-bottom:20px;
+}
+h2.block-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin:5px 0;
+}
+
+/* SIDEBARS */
+#region-sidebar-first,
+#region-sidebar-second {
+  background:#e9edf0;
+  padding:20px 0;
+}
+#region-sidebar-first h2,
+#region-sidebar-second h2 {
+  color:#333;
 }

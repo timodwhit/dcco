@@ -3,7 +3,7 @@
  *  apply to the normal and widescreen layouts. You may override these styles in the normal
  *  and widescreen CSS files as appropriate. */
  
-#main-menu {
+.navigation #main-menu {
   display: block;
 }
 #main-menu li {
@@ -12,11 +12,30 @@
 }
 #main-menu a {
   margin:0px;
-  font-size:100%;
+  font-size:90%;
 }
-
+a#home-link span {
+  background-image: url(../images/home-small.png);
+}
+#mobile-menu {
+  display: none;
+}
 a#mobile-menu-toggle {
   display: none;
+}
+nav.secondary-navigation {
+  display: block;
+}
+
+/* SIDEBARS */
+#region-sidebar-first,
+#region-sidebar-second {
+  background:none;
+  padding:0px 0;
+}
+#region-sidebar-first h2,
+#region-sidebar-second h2 {
+  color:#33adad;
 }
 
 

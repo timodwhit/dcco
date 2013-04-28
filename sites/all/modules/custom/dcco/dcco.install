@@ -7,6 +7,7 @@ function dcco_install() {
   // Enable and set the default theme.
   theme_enable(array('dcco2013'));
   variable_set('theme_default', 'dcco2013');
+  variable_set('node_admin_theme', 0);
 
   variable_set('site_name', 'DrupalCamp Colorado 2013');
   variable_set('site_slogan', 'June 29-30, <span class="year">2013</span>');
@@ -22,6 +23,8 @@ function dcco_install() {
   _dcco_create_menu_items();
 
   _dcco_create_products();
+
+  _dcco_create_nodes();
 }
 
 /**
@@ -61,7 +64,7 @@ function _dcco_create_menu_items() {
       'weight' => 0,
     ),
     array(
-      'link_path' => 'node',
+      'link_path' => 'user/register',
       'link_title' => 'Register',
       'menu_name' => 'user-menu',
       'weight' => 0,
@@ -113,4 +116,97 @@ function _dcco_create_products() {
     $product->field_registration_level[LANGUAGE_NONE][0]['value'] = $product_data['level'];
     commerce_product_save($product);
   }
+
+/**
+ * Create a few placeholder nodes.
+ */
+function _dcco_create_nodes() {
+  // Find our event node so that we can set the og.
+  $query = new EntityFieldQuery();
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'event');
+  $result = $query->execute();
+  if (!empty($result['node'])) {
+    $event_node = node_load(array_pop(array_keys($result['node'])));
+  }
+
+  $nodes = array(
+    array(
+      'title' => 'DrupalCamp Colorado 2013',
+      'body' => '',
+      'type' => 'page',
+      'path' => 'home',
+    ),
+    array(
+      'title' => 'Travel',
+      'body' => '',
+      'type' => 'page',
+      'menu' => array(
+        'menu_name' => 'main-menu',
+        'plid' => 0,
+        'link_title' => 'Travel',
+        'enabled' => TRUE,
+      ),
+    ),
+    // Rooms
+    array(
+      'title' => 'Wittemyer Courtroom',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 204',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 205',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 206',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 207',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 301',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 304',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 305',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 306',
+      'type' => 'room',
+    ),
+  );
+  foreach ($nodes as $n) {
+    $node = new StdClass();
+    $node->title = $n['title'];
+    $node->type = $n['type'];
+    $node->language = LANGUAGE_NONE;
+    $node->uid = 1;
+    if (isset($n['body'])) {
+      $node->body[LANGUAGE_NONE][0]['value'] = $n['body'];
+      $node->body[LANGUAGE_NONE][0]['format'] = 'filtered_html';
+    }
+    if (isset($n['path'])) {
+      $node->path = array(
+        'pathauto' => FALSE, 
+        'alias' => $n['path'],
+      );
+    }
+    // Add certain node types to the event og.
+    if (in_array($node->type, array('room'))) {
+      $node->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $event_node->nid;
+    }
+    node_save($node);
+  }
+  variable_set('site_frontpage', 'home');
 }
