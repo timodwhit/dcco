@@ -1673,7 +1673,7 @@ function cod_session_field_default_fields() {
           'path' => '',
           'size' => '60',
         ),
-        'type' => 'entityreference_autocomplete_tags',
+        'type' => 'entityreference_autocomplete',
         'weight' => '1',
       ),
     ),
