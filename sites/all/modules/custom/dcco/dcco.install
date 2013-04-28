@@ -21,6 +21,7 @@ function dcco_install() {
 
   _dcco_create_menu_items();
 
+  _dcco_create_products();
 }
 
 /**
@@ -69,5 +70,47 @@ function _dcco_create_menu_items() {
 
   foreach ($items as $item) {
     menu_link_save($item);
+  }
+}
+
+/**
+ * Create the products we want users to be able to buy.
+ *
+ * In this case, a membership, a membership with a $25 sponsorship,
+ * and a membership with a $50 sponsorship.
+ */
+function _dcco_create_products() {
+  $product_list = array(
+    array(
+      'title' => 'Membership',
+      'sku' => '10',
+      'price' => 1000,
+      'level' => 10,
+    ),
+    array(
+      'title' => 'Membership with $25 Sponsorship',
+      'sku' => '35',
+      'price' => 3500,
+      'level' => 35,
+    ),
+    array(
+      'title' => 'Membership with $50 Sponsorship',
+      'sku' => '60',
+      'price' => 6000,
+      'level' => 60,
+    ),
+  );
+  foreach ($product_list as $product_data) {
+    $product = commerce_product_new('cod_paid_event');
+    $product->title = $product_data['title'];
+    $product->sku = $product_data['sku'];
+    $product->status = 1;
+    $product->uid = 1;
+    $product->language = LANGUAGE_NONE;
+    $product->commerce_price[LANGUAGE_NONE][0]['amount'] = $product_data['price'];
+    $product->commerce_price[LANGUAGE_NONE][0]['currency_code'] = 'USD';
+    $product->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'paid_event';
+    $product->field_registration_level[LANGUAGE_NONE][0]['value'] = $product_data['level'];
+    commerce_product_save($product);
   }
 }
