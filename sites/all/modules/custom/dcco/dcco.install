@@ -60,7 +60,7 @@ function _dcco_create_menu_items() {
       'weight' => 0,
     ),
     array(
-      'link_path' => 'node',
+      'link_path' => 'user/register',
       'link_title' => 'Register',
       'menu_name' => 'user-menu',
       'weight' => 0,
