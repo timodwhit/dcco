@@ -976,7 +976,7 @@ h2.site-name {
   font-weight: bold;
   padding:10px;
   margin:10px;
-  font-size:150%;
+  font-size:16px;
   background:
     -moz-linear-gradient(45deg,  transparent 5px, #f66038 5px),
     -moz-linear-gradient(135deg, transparent 5px, #f66038 5px),
@@ -997,6 +997,14 @@ h2.site-name {
   -webkit-background-size: 55% 55%;
   background-size: 55% 55%;
   background-repeat: no-repeat;
+}
+
+a#home-link span {
+  display: inline-block;
+  background-image: url(../images/home.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  width:16px;
 }
 
 /* MOBILE NAVIGATION TOGGLE */

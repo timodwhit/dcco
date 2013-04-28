@@ -55,7 +55,7 @@ function dcco2013_preprocess_page(&$vars) {
     global $base_url;
     if($vars['main_menu'][$key]['href'] == '<front>') {
       $vars['main_menu'][$key]['attributes']['id'] = 'home-link';
-      $vars['main_menu'][$key]['title'] = '<img src="' . $base_url . '/'  . drupal_get_path('theme','dcco2013') . '/images/home.png" />';
+      //$vars['main_menu'][$key]['title'] = '<img src="' . $base_url . '/'  . drupal_get_path('theme','dcco2013') . '/images/home.png" />';
     }
   }
 }
