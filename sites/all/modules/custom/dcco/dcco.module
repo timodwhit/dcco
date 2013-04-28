@@ -4,5 +4,7 @@
  * Implements hook_node_presave().
  */
 function dcco_node_presave($node) {
-  $node->og_group_ref['und'][0]['target_id'] = 1;
+  if($node->type == 'session') {
+    $node->og_group_ref['und'][0]['target_id'] = 1;
+  }
 }
