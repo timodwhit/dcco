@@ -97,6 +97,7 @@ function _dcco_create_nodes() {
     }
     if (isset($n['path'])) {
       $node->path = array(
+        'pathauto' => FALSE, 
         'alias' => $n['path'],
       );
     }
