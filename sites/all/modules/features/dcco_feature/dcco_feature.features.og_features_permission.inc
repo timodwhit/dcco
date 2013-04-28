@@ -39,6 +39,13 @@ function dcco_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:event:update field_track field'
+  $permissions['node:event:update field_track field'] = array(
+    'roles' => array(
+      'member' => 'member',
+    ),
+  );
+
   // Exported og permission: 'node:event:view body field'
   $permissions['node:event:view body field'] = array(
     'roles' => array(
@@ -64,6 +71,13 @@ function dcco_feature_og_features_default_permissions() {
 
   // Exported og permission: 'node:event:view field_speakers field'
   $permissions['node:event:view field_speakers field'] = array(
+    'roles' => array(
+      'member' => 'member',
+    ),
+  );
+
+  // Exported og permission: 'node:event:view field_track field'
+  $permissions['node:event:view field_track field'] = array(
     'roles' => array(
       'member' => 'member',
     ),
