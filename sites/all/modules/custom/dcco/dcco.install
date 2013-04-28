@@ -21,6 +21,7 @@ function dcco_install() {
 
   _dcco_create_menu_items();
 
+  _dcco_create_nodes();
 }
 
 /**
@@ -70,4 +71,36 @@ function _dcco_create_menu_items() {
   foreach ($items as $item) {
     menu_link_save($item);
   }
+}
+
+/**
+ * Create a few placeholder nodes.
+ */
+function _dcco_create_nodes() {
+  $nodes = array(
+    array(
+      'title' => 'DrupalCamp Colorado 2013',
+      'body' => '',
+      'type' => 'page',
+      'path' => 'home',
+    ),
+  );
+  foreach ($nodes as $n) {
+    $node = new StdClass();
+    $node->title = $n['title'];
+    $node->type = $n['type'];
+    $node->language = LANGUAGE_NONE;
+    $node->uid = 1;
+    if (isset($n['body'])) {
+      $node->body[LANGUAGE_NONE][0]['value'] = $n['body'];
+      $node->body[LANGUAGE_NONE][0]['format'] = 'filtered_html';
+    }
+    if (isset($n['path'])) {
+      $node->path = array(
+        'alias' => $n['path'],
+      );
+    }
+    node_save($node);
+  }
+  variable_set('site_frontpage', 'home');
 }
