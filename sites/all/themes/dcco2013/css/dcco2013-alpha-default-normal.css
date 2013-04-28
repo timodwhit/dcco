@@ -13,6 +13,9 @@
   margin:0px;
   font-size:100%;
 }
+a#home-link span {
+  background-image: url(../images/home.png);
+}
 #mobile-menu {
   display: none;
 }

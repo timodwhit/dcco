@@ -1005,6 +1005,7 @@ a#home-link span {
   background-repeat: no-repeat;
   text-indent: -9999px;
   width:16px;
+  background-position: center center;
 }
 
 /* MOBILE NAVIGATION TOGGLE */
