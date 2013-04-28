@@ -304,10 +304,10 @@ h2 {
 h3 {
   font-size: 1.875em;
   line-height: 1.2em;
-  margin-top: 0em;
+  margin-top: 10px;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0em;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 
@@ -1135,3 +1135,48 @@ h2.block-title {
 #region-sidebar-second h2 {
   color:#333;
 }
+
+/* NODE META */
+
+footer.submitted {
+  display: none;
+}
+
+/* FORMS */
+
+input.form-text,
+textarea.form-textarea {
+  border:1px solid #ddd;
+}
+
+/* SPONSORS VIEW */
+
+.view-id-sponsors ul {
+  margin: 0;
+  padding: 0;
+}
+.view-id-sponsors ul li {
+  margin:0 0 20px 0;
+  padding:0;
+}
+
+/*TABLES */
+
+table th,
+table th.active {
+  background: #333;
+  color:#fff;
+}
+table th a:link,
+table th a:visited {
+  color:#fff;
+  font-weight: bold;
+}
+table td,
+table tr,
+tr:hover td, tr.even:hover td.active, tr.odd:hover td.active,
+tr.odd td,
+tr.even td {
+  background: none;
+}
+
