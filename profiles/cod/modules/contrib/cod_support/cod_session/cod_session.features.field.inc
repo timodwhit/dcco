@@ -1386,7 +1386,7 @@ function cod_session_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_experience',
       'label' => 'Experience level',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
@@ -1743,7 +1743,7 @@ function cod_session_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_track',
       'label' => 'Track',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
