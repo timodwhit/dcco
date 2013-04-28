@@ -84,6 +84,44 @@ function _dcco_create_nodes() {
       'type' => 'page',
       'path' => 'home',
     ),
+    // Rooms
+    // @todo set og group
+    array(
+      'title' => 'Wittemyer Courtroom',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 204',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 205',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 206',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 207',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 301',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 304',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 305',
+      'type' => 'room',
+    ),
+    array(
+      'title' => 'Room 306',
+      'type' => 'room',
+    ),
   );
   foreach ($nodes as $n) {
     $node = new StdClass();
