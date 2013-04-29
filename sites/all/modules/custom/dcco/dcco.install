@@ -116,6 +116,7 @@ function _dcco_create_products() {
     $product->field_registration_level[LANGUAGE_NONE][0]['value'] = $product_data['level'];
     commerce_product_save($product);
   }
+}
 
 /**
  * Create a few placeholder nodes.
