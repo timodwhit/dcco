@@ -234,6 +234,9 @@ Parking is free on weekends on the west and east sides of the building. Overflow
 If traveling from Denver, <a href="http://www.rtd-denver.com/">RTD</a> is a fabulous option for getting to the venue. There is a stop right at the corner of Broadway and Baseline!
 
 <h4>Biking</h4>
-Boulder is a great town for biking! Be sure to check out the local <a href="http://boulder.bcycle.com/">Boulder B-Cycle</a> for getting around town!';
+Boulder is a great town for biking! Be sure to check out the local <a href="http://boulder.bcycle.com/">Boulder B-Cycle</a> for getting around town!
+
+<h4>Lodging</h4>
+There are several hotels within walking distance of the venue. The <a href="http://boulderinn.com/">Best Western Boulder Inn</a> has given DrupalCamp Colorado a special rate of $124/night. Call 800-233-8469 and reference "DrupalCamp Colorado" to recieve the rate.';
   return $output;
 }
