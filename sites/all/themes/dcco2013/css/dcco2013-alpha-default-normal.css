@@ -1,6 +1,74 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+html {
+  height: 100%;
+}
+body {
+  background-color:#343434;
+  background-image: url(../images/background1.jpg);
+  background-repeat: repeat-y;
+  background-position: center;
+  height: 100%;
+}
+.site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #aa3320;
+  -moz-box-shadow:    0px 0px 5px 2px #222;
+  -webkit-box-shadow: 0px 0px 5px 2px #222;
+  box-shadow:         0px 0px 5px 2px #222;
+}
+body .page-wrapper {
+    padding-bottom: 200px;
+  }
+body #footer {
+  height: 328px;
+  z-index: 10;
+  overflow: hidden;
+  position: absolute;
+  top:272px;
+  left: 0;
+  background-image: url(../images/mountains-flat.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  display: none;
+}
+
+
+.region-branding {
+  background-image: none;
+  margin:0 10px;
+}
+
+
+.region-menu-inner {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  padding-top:40px;
+}
+.mobile-menu {
+  display: none;
+}
+.site-main-menu {
+  display: block;
+}
+
+
+.navigation,
+.secondary-navigation {
+  overflow: ;
+}
+ul#main-menu,
+ul#secondary-menu {
+  float: right;
+  margin:5px 0;
+}
+#secondary-menu a {
+  color:#fff;
+}
+
 
 .navigation #main-menu {
   display: block;
@@ -11,7 +79,13 @@
 }
 #main-menu a {
   margin:0px;
-  font-size:100%;
+  font-size:120%;
+  font-weight: bold;
+  color:#f66038;
+}
+#main-menu a.active,
+#main-menu a.active-trail {
+  color:#2cadad;
 }
 a#home-link span {
   background-image: url(../images/home.png);
@@ -25,6 +99,23 @@ a#mobile-menu-toggle {
 nav.secondary-navigation {
   display: block;
 }
+
+#zone-header-wrapper {
+  background-image: url(../images/mountains-flat2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding-bottom:100px;
+  min-height: 328px;
+
+}
+
+.not-front .zone-content-wrapper {
+  background-image: url(../images/mountains-flat2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top:100px;
+}
+
 
 /* SIDEBARS */
 #region-sidebar-first,
