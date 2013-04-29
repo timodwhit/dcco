@@ -207,6 +207,9 @@ function _dcco_create_nodes() {
     if (in_array($node->type, array('room'))) {
       $node->og_group_ref[LANGUAGE_NONE][0]['target_id'] = $event_node->nid;
     }
+    if (isset($n['menu'])) {
+      $node->menu = $n['menu'];
+    }
     node_save($node);
   }
   variable_set('site_frontpage', 'home');
