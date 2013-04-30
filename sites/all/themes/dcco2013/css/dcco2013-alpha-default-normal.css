@@ -118,12 +118,11 @@ nav.secondary-navigation {
 
 
 /* SIDEBARS */
-#region-sidebar-first,
-#region-sidebar-second {
+#region-sidebar-first .block,
+#region-sidebar-second .block {
   background:none;
   padding:0px 0;
 }
 #region-sidebar-first h2,
 #region-sidebar-second h2 {
-  color:#33adad;
 }

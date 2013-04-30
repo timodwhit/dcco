@@ -82,14 +82,17 @@
 
 .flexslider .views-field-field-slider-caption .field-content h2 {
   margin: 0;
-  font-size: 110%;
+  font-size: 180%;
+  font-weight: 100;
 }
 .flexslider .views-field-field-slider-caption .field-content h2 a {
   color:#fff;
 }
+/*
 .flexslider .views-field-field-slider-caption .field-content h2 a:after {
   content:" \00bb";
 }
+*/
 
 /* MEDIUM SLIDER */
 
@@ -170,6 +173,8 @@
 .view-cu-slider-wide-teaser .flexslider_views_slideshow_slide {
   background: transparent;
   overflow: auto;
+  background:#333;
+  background:rgba(0,0,0,.6);
 }
 .view-cu-slider-wide-teaser .views-field-field-slider-image {
     
@@ -191,25 +196,19 @@ body .view-cu-slider-wide-teaser .flexslider .views-field-field-slider-caption {
 .view-cu-slider-wide-teaser .views-field-field-slider-caption .field-content {
   padding:10px 20px;
 }
+p.slide-teaser {
+  margin:10px 0;
+}
 .view-cu-slider-wide-teaser a.button {
-  -webkit-box-shadow: 0px 1px 1px 0px #111;
-  -moz-box-shadow: 0px 1px 1px 0px #111;
-  box-shadow: 0px 1px 1px 0px #111;
-  padding:2px 5px;
-  background-color: #f0f0f0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#c2c2c2));
-  background-image: -webkit-linear-gradient(top, #f0f0f0, #c2c2c2);
-  background-image: -moz-linear-gradient(top, #f0f0f0, #c2c2c2);
-  background-image: -o-linear-gradient(top, #f0f0f0, #c2c2c2);
-  background-image: -ms-linear-gradient(top, #f0f0f0, #c2c2c2);
-  background-image: linear-gradient(top, #f0f0f0, #c2c2c2);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f0f0f0', EndColorStr='#c2c2c2');
-  color:#333;
-  padding:0px 5px;
+  margin:5px 0;
+  padding:5px 10px;
+  background-color: #f95f2e;
+  color:#fff;
   display: inline-block;
   text-shadow: none;
-  border:1px solid #c0c0c0;
-  font-size: 85%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 .view-cu-slider-wide-teaser p.slide-teaser,
 .view-cu-slider-wide-teaser a.button {
@@ -217,12 +216,12 @@ body .view-cu-slider-wide-teaser .flexslider .views-field-field-slider-caption {
 }
 @media (min-width: 720px) {
   .view-cu-slider-wide-teaser .views-field-field-slider-image {
-    float: right;
+    float: left;
     width:60%;
   }
   
   .view-cu-slider-wide-teaser .views-field-field-slider-caption {
-    float: right;
+    float: left;
     width:40%;
     
     position: static;

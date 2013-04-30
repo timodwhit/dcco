@@ -17,249 +17,6 @@ img {
   z-index: 2;
 }
 
-
-
-@-webkit-keyframes middleground-cloud-lg {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@-moz-keyframes middleground-cloud-lg {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@-o-keyframes middleground-cloud-lg {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@keyframes middleground-cloud-lg {
-  from {
-    left: -10%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-.middleground .cloud {
-  -webkit-animation: middleground-cloud-lg 40s infinite;
-  -moz-animation: middleground-cloud-lg 40s infinite;
-  -o-animation: middleground-cloud-lg 40s infinite;
-  animation: middleground-cloud-lg 40s infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes background-cloud-lg {
-  from {
-    left: -20%;
-  }
-
-  to {
-    left: 100%;
-  }
-}
-
-@-moz-keyframes background-cloud-lg {
-  from {
-    left: -20%;
-  }
-
-  to {
-    left: 100%;
-  }
-}
-
-@-o-keyframes background-cloud-lg {
-  from {
-    left: -20%;
-  }
-
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes background-cloud-lg {
-  from {
-    left: -20%;
-  }
-
-  to {
-    left: 100%;
-  }
-}
-
-.background .cloud-lg {
-  -webkit-animation: background-cloud-lg 60s infinite;
-  -moz-animation: background-cloud-lg 60s infinite;
-  -o-animation: background-cloud-lg 60s infinite;
-  animation: background-cloud-lg 60s infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-@-webkit-keyframes background-cloud-sm {
-  from {
-    left: -30%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@-moz-keyframes background-cloud-sm {
-  from {
-    left: -30%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@-o-keyframes background-cloud-sm {
-  from {
-    left: -30%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-@keyframes background-cloud-sm {
-  from {
-    left: -30%;
-  }
-
-  to {
-    left: 90%;
-  }
-}
-
-.background .cloud-sm {
-  -webkit-animation: background-cloud-sm 60s infinite;
-  -moz-animation: background-cloud-sm 60s infinite;
-  animation: background-cloud-sm 60s infinite;
-  animation: background-cloud-sm 60s infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -o-animation-timing-function: linear;
-  animation-timing-function: linear;
-}
-
-
-
-.page-wrapper {
-}
-
-
-
-
-
-.foreground,
-.middleground,
-.background {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.cloud,
-.mountain {
-  position: absolute;
-  max-height: 100%;
-}
-
-.mountain {
-  bottom: 0;
-}
-
-.foreground {
-  z-index: 3;
-}
-.foreground .mountain-sm {
-  left: 0;
-  width: 10%;
-}
-.foreground .mountain-lg {
-  left: 40%;
-  width: 20%;
-}
-
-.middleground {
-  z-index: 2;
-}
-.middleground .mountain-sm {
-  left: 20%;
-  width: 50%;
-}
-.middleground .mountain-lg {
-  left: 50%;
-  width: 80%;
-}
-.middleground .cloud {
-  z-index: 3;
-  left: 25%;
-  top: 40%;
-  width: 20%;
-}
-
-.background {
-  z-index: 1;
-}
-.background .mountain-sm {
-  z-index: 3;
-  left: 5%;
-  width: 60%;
-}
-.background .mountain-lg {
-  z-index: 2;
-  left: 35%;
-  width: 45%;
-}
-.background .cloud-lg {
-  z-index: 1;
-  width: 10%;
-  top: 20%;
-  left: 60%;
-}
-.background .cloud-sm {
-  z-index: 4;
-  width: 5%;
-  top: 35%;
-  left: 50%;
-}
-
-
-/* NEW STYLES START HERE */
-
 a:link, 
 a:visited {
   color:#f66038;
@@ -375,13 +132,16 @@ a#mobile-menu-toggle {
   color:#fff; 
   background-color: #000;
   margin-bottom: 20px;
+  padding-top:20px;
+}
+.region-footer-first .block {
 }
 
 h1#page-title {
   margin:0 0 10px 0;
   padding:0 0 0 10px;
   font-size: 36px;
-  font-weight: normal;
+  font-weight: 100;
 }
 .front h1.title {
   display: none;
@@ -398,14 +158,16 @@ h2.block-title {
 }
 
 /* SIDEBARS */
-#region-sidebar-first,
-#region-sidebar-second {
+#region-sidebar-first .block,
+#region-sidebar-second .block {
   background:#e9edf0;
   padding:20px 0;
 }
 #region-sidebar-first h2,
 #region-sidebar-second h2 {
   color:#333;
+  font-weight: 100;
+  font-size: 160%;
 }
 
 /* NODE META */
@@ -452,3 +214,32 @@ tr.even td {
   background: none;
 }
 
+
+/* FEED ICON */
+
+.feed-icon {
+  padding:10px;
+}
+
+
+/* region-footer-second */
+
+.region-footer-second ul.menu,
+.region-footer-second ul.menu li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+.region-footer-second ul.menu li {
+  display: inline;
+}
+.region-footer-second ul.menu li a,
+.region-footer-second ul.menu li a.active,
+.region-footer-second ul.menu li a.active-trail {
+  color:#fff;
+  display: inline-block;
+  margin-right:15px;
+  font-size: 85%;
+  font-weight: bold;
+}

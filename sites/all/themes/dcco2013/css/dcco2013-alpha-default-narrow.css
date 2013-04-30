@@ -61,3 +61,13 @@ ul#secondary-menu {
 .site-main-menu {
   display: block;
 }
+
+/* SIDEBARS */
+#region-sidebar-first .block,
+#region-sidebar-second .block {
+  background:none;
+  padding:0px 0;
+}
+#region-sidebar-first h2,
+#region-sidebar-second h2 {
+}
