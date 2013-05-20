@@ -64,6 +64,7 @@ ul#main-menu,
 ul#secondary-menu {
   float: right;
   margin:5px 0;
+  clear: both;
 }
 #secondary-menu a {
   color:#fff;
