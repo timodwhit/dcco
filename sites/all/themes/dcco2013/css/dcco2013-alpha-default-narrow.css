@@ -4,7 +4,7 @@
  *  and widescreen CSS files as appropriate. */
 
 .site-wrapper {
-  width: 800px;
+  width: 100%;
   margin: 0 auto;
   background-color: #aa3320;
   -moz-box-shadow:    0px 0px 5px 2px #222;
