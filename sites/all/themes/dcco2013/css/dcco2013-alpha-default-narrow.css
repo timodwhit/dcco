@@ -2,7 +2,7 @@
 /* If you are using the default media queries provided by Omega, these styles will also
  *  apply to the normal and widescreen layouts. You may override these styles in the normal
  *  and widescreen CSS files as appropriate. */
- 
+
 .site-wrapper {
   width: 800px;
   margin: 0 auto;
@@ -12,8 +12,6 @@
   box-shadow:         0px 0px 5px 2px #222;
 }
 
-
-
 .navigation,
 .secondary-navigation {
   overflow: ;
@@ -22,6 +20,18 @@ ul#main-menu,
 ul#secondary-menu {
   float: right;
   margin:5px 0;
+}
+#main-menu li.last a {
+  display: block;
+  background: url("../images/twitter-icons.png") top left no-repeat;
+  position: absolute;
+  right: 25px;
+  font-size: 0;
+  width:54px;
+  height: 40px;
+}
+#main-menu li.last a:hover {
+  background-position: bottom left;
 }
 #secondary-menu a {
   color:#fff;

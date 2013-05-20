@@ -19,7 +19,7 @@ p {
   z-index: 2;
 }
 
-a:link, 
+a:link,
 a:visited {
   color:#f66038;
   text-decoration: none;
@@ -93,11 +93,11 @@ a#mobile-menu-toggle {
   font-size:120%;
   font-weight: bold;
   color:#f66038;
-  
+
 }
 #secondary-menu a {
   color:#fff;
-  
+
 }
 
 
@@ -131,7 +131,7 @@ a#mobile-menu-toggle {
 
 }
 #zone-footer {
-  color:#fff; 
+  color:#fff;
   background-color: #000;
   margin-bottom: 20px;
   padding-top:20px;

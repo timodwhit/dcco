@@ -8,3 +8,19 @@ function dcco_node_presave($node) {
     $node->og_group_ref['und'][0]['target_id'] = 1;
   }
 }
+/**
+ * Implements hook_cron().
+ */
+function dcco_cron() {
+  // $product = commerce_product_new('cod_paid_event');
+  //   $product->sku = 211;
+  //   $product->title = 'DrupalCamp Colorado 2013';
+  //   $product->status = 1;
+  //   $product->uid = 1;
+  //   $product->created = 1;
+  //   $product->commerce_price[LANGUAGE_NONE][0]['amount'] = '1000';
+  //   $product->commerce_price[LANGUAGE_NONE][0]['currency_code'] = 'USD';
+  //   $product->field_registration[LANGUAGE_NONE][0]['registration_type'] = 'paid_event';
+
+  //   commerce_product_save($product);
+}
