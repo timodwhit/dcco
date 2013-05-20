@@ -11,7 +11,9 @@ img {
   width: auto\9;
   /* IE8 and below */
 }
-
+p {
+  margin-bottom: 1em;
+}
 
 .site-wrapper {
   z-index: 2;
