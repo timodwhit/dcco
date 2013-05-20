@@ -23,15 +23,18 @@ ul#secondary-menu {
 }
 #main-menu li.last a {
   display: block;
-  background: url("../images/twitter-icons.png") top left no-repeat;
+  background: url("../images/twitter-icons.png") top right no-repeat;
+  color: #408cb3;
   position: absolute;
   right: 25px;
   font-size: 0;
-  width:54px;
-  height: 40px;
+  padding-top: 15px;
+  width: 120px;
+  height: 25px;
 }
 #main-menu li.last a:hover {
-  background-position: bottom left;
+  background-position: bottom right;
+  font-size: .8em;
 }
 #secondary-menu a {
   color:#fff;
