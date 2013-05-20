@@ -82,3 +82,14 @@ ul#secondary-menu {
 #region-sidebar-first h2,
 #region-sidebar-second h2 {
 }
+
+/* SLIDER */
+.view-cu-slider-wide-teaser .views-field-field-slider-image {
+  width: 30%;
+}
+.view-cu-slider-wide-teaser .views-field-field-slider-image .field-content {
+  padding: 10px;
+}
+.view-cu-slider-wide-teaser .views-field-field-slider-caption {
+  width: 70%;
+}

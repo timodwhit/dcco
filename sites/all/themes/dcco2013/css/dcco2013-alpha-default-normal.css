@@ -125,3 +125,14 @@ nav.secondary-navigation {
 #region-sidebar-first h2,
 #region-sidebar-second h2 {
 }
+
+/* Slider */
+.view-cu-slider-wide-teaser .views-field-field-slider-image {
+  width: 60%;
+}
+.view-cu-slider-wide-teaser .views-field-field-slider-image .field-content {
+  padding: 0px;
+}
+.view-cu-slider-wide-teaser .views-field-field-slider-caption {
+  width: 40%;
+}
