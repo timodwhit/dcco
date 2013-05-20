@@ -172,12 +172,6 @@ h2.block-title {
   font-size: 160%;
 }
 
-/* NODE META */
-
-footer.submitted {
-  display: none;
-}
-
 /* FORMS */
 
 input.form-text,
@@ -244,4 +238,30 @@ tr.even td {
   margin-right:15px;
   font-size: 85%;
   font-weight: bold;
+}
+
+/* News */
+.view-news .item-list ul,
+.view-news .item-list li {
+  margin: 0;
+  padding: 0;
+}
+article .date {
+  float: left;
+  background: #ccc;
+  width: 50px;
+  margin: 0 5px 5px 0;
+}
+article .date .day {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  padding: 3px;
+}
+article .date .month {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  display: block;
+  font-size: 10px;
 }

@@ -1,5 +1,15 @@
 <article<?php print $attributes; ?>>
-  <?php print $user_picture; ?>
+  <?php if ($display_submitted): ?>
+  <footer class="submitted">
+    <div class="date">
+      <?php $timestamp = $node->created; ?>
+      <span class="day"><?php print format_date($timestamp, 'custom', 'j'); ?></span>
+      <span class="month"><?php print format_date($timestamp, 'custom', 'M'); ?></span>
+    </div>
+  </footer>
+  <?php endif; ?>  
+  
+
   <?php print render($title_prefix); ?>
   <?php if (!$page && $title): ?>
   <header>
@@ -7,9 +17,6 @@
   </header>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-  <?php if ($display_submitted): ?>
-  <footer class="submitted"><?php print $date; ?> -- <?php print $name; ?></footer>
-  <?php endif; ?>  
   
   <div<?php print $content_attributes; ?>>
     <?php
