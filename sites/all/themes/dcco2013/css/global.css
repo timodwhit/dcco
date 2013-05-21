@@ -115,7 +115,11 @@ a#mobile-menu-toggle {
   line-height: 1.5em;
 }
 
-
+#zone-user-wrapper {
+  height: 10px;
+  background: #2aadae;
+  height: 8px;
+}
 #zone-header-wrapper {
   background: #000;
 }
