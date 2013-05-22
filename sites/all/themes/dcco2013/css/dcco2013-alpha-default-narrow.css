@@ -4,12 +4,14 @@
  *  and widescreen CSS files as appropriate. */
 
 .site-wrapper {
+  background: #aa3320 url(../images/mountains-flat3.png) center top no-repeat;
+}
+.section-header {
+  background-color: #000;
+}
+.site-wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: #aa3320;
-  -moz-box-shadow:    0px 0px 5px 2px #222;
-  -webkit-box-shadow: 0px 0px 5px 2px #222;
-  box-shadow:         0px 0px 5px 2px #222;
 }
 
 .navigation,
@@ -49,9 +51,6 @@ ul#secondary-menu {
 }
 
 .not-front .zone-content-wrapper {
-  background-image: url(../images/mountains-flat2.png);
-  background-position: top center;
-  background-repeat: no-repeat;
   padding-top:100px;
 }
 
