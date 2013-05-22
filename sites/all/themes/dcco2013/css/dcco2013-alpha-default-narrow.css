@@ -42,9 +42,8 @@ ul#secondary-menu {
   color:#fff;
 }
 
-
-#zone-header-wrapper {
-  background-image: url(../images/mountains-flat2.png);
+.front #zone-header-wrapper {
+  background-image: url(../images/mountains-flat3.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   min-height: 328px;
