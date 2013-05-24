@@ -37,6 +37,27 @@ a:visited {
   float: none;
   text-align: center;
 }
+h1, h2, h3, h4, h5, h6 {
+  line-height: 110%;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 187%;
+  margin-bottom: 20px;
+}
+h3 {
+  font-size: 140%;
+}
+h4 {
+  font-size: 126%;
+}
+h5 {
+  font-size: 113%;
+}
+h6 {
+  font-size: 100%;
+}
 h1.site-name,
 h2.site-name {
   text-indent: -9999px;
@@ -267,4 +288,5 @@ article .date .month {
   text-align: center;
   display: block;
   font-size: 10px;
+  line-height: 15px;
 }
