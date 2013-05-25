@@ -98,6 +98,7 @@ function cod_session_flag_default_flags() {
       0 => 'name',
     ),
     'api_version' => 2,
+    'status' => FALSE,
   );
   // Exported flag: "Session Vote".
   $flags['session_vote'] = array(
