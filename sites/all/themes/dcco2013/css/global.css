@@ -40,14 +40,15 @@ a:visited {
 h1, h2, h3, h4, h5, h6 {
   line-height: 110%;
   margin-bottom: 10px;
-  font-weight: normal;
 }
 h2 {
   font-size: 187%;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 h3 {
   font-size: 140%;
+  font-weight: bold;
 }
 h4 {
   font-size: 126%;
@@ -56,9 +57,11 @@ h4 {
 }
 h5 {
   font-size: 113%;
+  font-weight: bold;
 }
 h6 {
   font-size: 100%;
+  font-weight: bold;
 }
 h1.site-name,
 h2.site-name {
