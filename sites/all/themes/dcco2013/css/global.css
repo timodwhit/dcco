@@ -65,7 +65,14 @@ h2.site-name {
 .site-name-slogan {
   display: none;
 }
-
+ol {
+  list-style-type: decimal;
+  margin-left: 25px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 25px;
+}
 .region-branding-inner {
   position: relative;
   padding:0 30px;
