@@ -91,3 +91,14 @@ ul#secondary-menu {
 .view-cu-slider-wide-teaser .views-field-field-slider-caption {
   width: 70%;
 }
+
+/* Sponsors View */
+.view-sponsors h3 {
+  clear: both;
+}
+.view-sponsors ul li {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  height: 200px
+}
