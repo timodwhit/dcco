@@ -104,4 +104,5 @@ ul#secondary-menu {
 }
 #block-views-sponsors-block .view-sponsors ul li {
   margin: 0;
+  height: auto;
 }
