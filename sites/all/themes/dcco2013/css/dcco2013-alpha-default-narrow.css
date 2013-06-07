@@ -102,3 +102,6 @@ ul#secondary-menu {
   margin-right: 3%;
   height: 200px
 }
+#block-views-sponsors-block .view-sponsors ul li {
+  margin: 0;
+}
