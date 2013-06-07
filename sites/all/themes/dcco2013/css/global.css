@@ -304,3 +304,7 @@ article .date .month {
   font-size: 10px;
   line-height: 15px;
 }
+
+.flex-control-nav {
+  display: none;
+}
