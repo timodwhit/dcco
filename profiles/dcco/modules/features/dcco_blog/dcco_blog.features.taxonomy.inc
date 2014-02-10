@@ -7,6 +7,7 @@
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
+/**
 function dcco_blog_taxonomy_default_vocabularies() {
   return array(
     'tags' => array(
@@ -34,3 +35,4 @@ function dcco_blog_taxonomy_default_vocabularies() {
     ),
   );
 }
+**/
