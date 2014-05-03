@@ -30,3 +30,4 @@ dependencies[] = features
 dependencies[] = dcco_blog
 dependencies[] = dcco_sponsors
 dependencies[] = dcco_register
+dependencies[] = personal_information_profile
