@@ -8,6 +8,7 @@ dependencies[] = color
 dependencies[] = comment
 dependencies[] = contextual
 dependencies[] = dashboard
+dependencies[] = features
 dependencies[] = help
 dependencies[] = image
 dependencies[] = list
@@ -25,7 +26,7 @@ dependencies[] = file
 dependencies[] = rdf
 dependencies[] = views
 dependencies[] = views_ui
-dependencies[] = features
+dependencies[] = webform
 
 dependencies[] = dcco_blog
 dependencies[] = dcco_sponsors
