@@ -11,6 +11,6 @@ dependencies[] = commerce_product_reference
 dependencies[] = commerce_checkout
 dependencies[] = commerce_cart
 
-dependencies[] = commerce_payment_example
+dependencies[] = commerce_stripe
 
 files[] = dcco_register.views_default.inc
