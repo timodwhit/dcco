@@ -371,6 +371,16 @@ function dcco_install() {
     ->fields(array('uid' => 1, 'rid' => $admin_role->rid))
     ->execute();
 
+	// Create DCCO actions menu
+
+	$menu = array(
+		'menu_name' => 'dcco-actions',
+		'title' => st('DCCO Actions'),
+		'description' => st('The <em>DCCO actions</em> menu is used for things people can do for DrupalCamp Colorado.'),
+	);
+
+	menu_save($menu);
+
   // Create a Home link in the main menu.
   $item = array(
     'link_title' => st('Home'),

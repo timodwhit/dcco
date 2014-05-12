@@ -13,6 +13,8 @@ function dcco_register_menu() {
     'page callback' => 'drupal_get_form',
     'page arguments' => array('dcco_register_registration'),
     'access arguments' => array('access checkout'),
+    'menu_name' => 'dcco-actions',
+    'weight' => 0,
   );
 
   return $items;
