@@ -3,7 +3,17 @@
 * Implementation of hook_install().
 */
 function personal_information_profile_install(){
-  //Food Preference taxonomy terms
+  // Force the vocabularies to exist before adding terms.
+  $vocabs = array();
+  module_load_include('inc', 'personal_information_profile', 'personal_information_profile.features.taxonomy');
+  $vocabs = personal_information_profile_taxonomy_default_vocabularies();
+  foreach ($vocabs as $vocab) {
+    if (!taxonomy_vocabulary_machine_name_load($vocab->name)) {
+      taxonomy_vocabulary_save($vocab); 
+    }
+  }
+ 
+  // Food Preference taxonomy terms
   $food_preference = array(
     'Herbivore',
     'Omnivore',    
