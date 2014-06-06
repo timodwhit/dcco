@@ -15,6 +15,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'access all views',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'views',
   );
@@ -24,6 +25,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'user',
   );
@@ -33,6 +35,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'administer features',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'features',
   );
@@ -42,6 +45,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'administer profile types',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'profile2',
   );
@@ -51,6 +55,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'administer profiles',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'profile2',
   );
@@ -60,6 +65,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -69,6 +75,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'administer views',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'views',
   );
@@ -78,6 +85,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'delete terms in food_preference',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -87,6 +95,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'delete terms in job_title',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -96,6 +105,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'delete terms in t_shirt_size',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -105,6 +115,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'edit any main profile',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'profile2',
   );
@@ -114,6 +125,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'edit any personal_information profile',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'profile2',
   );
@@ -143,6 +155,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'edit terms in food_preference',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -152,6 +165,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'edit terms in job_title',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -161,6 +175,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'edit terms in t_shirt_size',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'taxonomy',
   );
@@ -170,6 +185,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'generate features',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'features',
   );
@@ -179,6 +195,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'manage features',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'features',
   );
@@ -188,6 +205,7 @@ function personal_information_profile_user_default_permissions() {
     'name' => 'view any main profile',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'profile2',
   );

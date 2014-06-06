@@ -24,6 +24,7 @@ function dcco_session_submission_user_default_permissions() {
     'name' => 'delete any session content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
       'session curator' => 'session curator',
     ),
     'module' => 'node',
@@ -34,6 +35,7 @@ function dcco_session_submission_user_default_permissions() {
     'name' => 'delete own session content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
     ),
     'module' => 'node',
   );
@@ -43,6 +45,7 @@ function dcco_session_submission_user_default_permissions() {
     'name' => 'edit any session content',
     'roles' => array(
       'administrator' => 'administrator',
+      'developer' => 'developer',
       'session curator' => 'session curator',
     ),
     'module' => 'node',
